@@ -69,23 +69,22 @@
 //  }
 //FUNCTION TYPES
 //declaring a type of function
-let greet;
+//let greet: (a: string, b: string) => void;
 //syntax of how to use function greet
-greet = (name, greeting) => {
-    console.log(`${name} says ${greeting}`);
-};
+// greet = (name: string, greeting: string) => {
+//         console.log(`${name} says ${greeting}`);
+// }
 //type of function that must return a number
-let calc;
-calc = (numOne, numTwo, action) => {
-    if (action === 'add') {
-        return numOne + numTwo;
-    }
-    else {
-        return numOne - numTwo;
-    }
-};
+// let calc: (a: number, b: number, c: string) => number;
+// calc = (numOne: number, numTwo: number, action: string) => {
+//         if (action === 'add'){
+//                 return numOne + numTwo;
+//         } else {
+//                 return numOne - numTwo;
+//         }
+// }
 //type of function with a parameter of object
-let logDetails;
-logDetails = (ninja) => {
-    console.log(`${ninja.name} is ${ninja.age} years old`);
-};
+// let logDetails: (obj: {name: string, age: number}) => void;
+// logDetails = (ninja: {name: string, age: number}) => {
+//   console.log(`${ninja.name} is ${ninja.age} years old`);
+// }
