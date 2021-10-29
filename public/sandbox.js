@@ -58,7 +58,7 @@
 //result becomes a type of number bc the returned value in plus saves there
 // let result = plus(12345, 192837);
 // console.log(result);
-// type aliases
+// TYPE ALIASES
 //  type StringorNum = string | number;
 //  type obj = {name: string, uid: StringorNum};
 //  const logDetails = (uid: StringorNum, item: string) => {
@@ -67,3 +67,25 @@
 //  }
 //  const greetAgain = (user: obj) => {
 //  }
+//FUNCTION TYPES
+//declaring a type of function
+let greet;
+//syntax of how to use function greet
+greet = (name, greeting) => {
+    console.log(`${name} says ${greeting}`);
+};
+//type of function that must return a number
+let calc;
+calc = (numOne, numTwo, action) => {
+    if (action === 'add') {
+        return numOne + numTwo;
+    }
+    else {
+        return numOne - numTwo;
+    }
+};
+//type of function with a parameter of object
+let logDetails;
+logDetails = (ninja) => {
+    console.log(`${ninja.name} is ${ninja.age} years old`);
+};
