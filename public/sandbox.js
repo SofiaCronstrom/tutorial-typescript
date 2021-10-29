@@ -41,20 +41,29 @@
 //let obj: {name: any, age: any, loggedIn: any};
 //Functions in typescript
 //type of function
-let greet;
-greet = () => {
-    console.log('hi');
-};
+// let greet: Function;
+// greet = () => {
+//         console.log('hi');
+// }
 //function type with type of parameters
 //c?: has an empty value  
-const add = (a, b, c) => {
-    console.log(a + b);
-    console.log(c);
-};
-add(10, 11, 'hi');
-const plus = (a, b) => {
-    return a + b;
-};
+// const add = (a: number, b: number, c: string | number) => {
+//         console.log(a + b);
+//         console.log(c);
+// }
+// add(10, 11, 'hi');
+// const plus = (a: number, b: number): number => {
+//         return a+b;
+// }
 //result becomes a type of number bc the returned value in plus saves there
-let result = plus(12345, 192837);
-console.log(result);
+// let result = plus(12345, 192837);
+// console.log(result);
+// type aliases
+//  type StringorNum = string | number;
+//  type obj = {name: string, uid: StringorNum};
+//  const logDetails = (uid: StringorNum, item: string) => {
+//  }
+//  const greet = (user: obj) => {
+//  }
+//  const greetAgain = (user: obj) => {
+//  }
