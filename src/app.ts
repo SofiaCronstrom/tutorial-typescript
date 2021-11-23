@@ -1,18 +1,32 @@
-const form = document.querySelector('.new-item-form') as HTMLFormElement;
-console.log(form.children);
+import {Invoice} from './classes/invoice.js';
 
-const type = document.querySelector('#type') as HTMLFormElement;
-const tofrom = document.querySelector('#tofrom') as HTMLFormElement;
-const details = document.querySelector('#details') as HTMLFormElement;
-const amount = document.querySelector('#amount') as HTMLFormElement;
+const invOne = new Invoice('mario', 'work on website', 400);
+const invTwo = new Invoice('Sofia', 'teaching code', 500);
+
+let invoices: Invoice[] = [];
+invoices.push(invOne);
+invoices.push(invTwo); 
+
+invoices.forEach(inv => {
+    console.log(inv.client, inv.amount, inv.format());
+});
+
+
+const form = document.querySelector('.new-item-form') as HTMLFormElement;
+
+
+const type = document.querySelector('#type') as HTMLSelectElement;
+const tofrom = document.querySelector('#tofrom') as HTMLInputElement;
+const details = document.querySelector('#details') as HTMLInputElement;
+const amount = document.querySelector('#amount') as HTMLInputElement;
 
 form.addEventListener('submit', (e: Event) =>{
 e.preventDefault();
-
-console.log(
-    type.value,
-    tofrom.value,
-    details.value,
-    amount.valueAsNumber
-);
+console.log(e);
+// console.log(
+//     type.value,
+//     tofrom.value,
+//     details.value,
+//     amount.valueAsNumber
+// );
 });
